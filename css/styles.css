@@ -1,0 +1,723 @@
+/* Đặt các kiểu cơ bản cho trang web */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#fff;
+}
+/* phần đầu logo */
+.links {
+    background-color: #448cd8;
+    padding: 7px 0;
+    text-align: center;
+}
+.links a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #fff;
+    margin-right: 23px;
+}
+.links a::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+}
+.links a:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.links a:active{
+    color: #000000;
+    text-decoration: none;
+}
+.logo img{
+    display: flex;
+    color: rgb(251, 249, 249);
+    width: 5%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -1%;
+    margin-left: 25%; 
+}
+.header h1{
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 0;
+    text-align: center;
+}
+.header .brcrum-title{
+    color: #333;
+    list-style: none;
+    box-sizing: border-box;
+    font: inherit;
+    vertical-align: baseline;
+    letter-spacing: 0;
+    text-decoration: none;
+    font-family: Roboto;
+    padding: 0 10px;
+    margin-left: 30%;
+}
+/* phần thân */
+a #home,a #hoatdong,a #noidung,a #thuvien,a #lienhe{
+    transition: .3s ease-in-out;
+}
+/* trang chủ */
+.home{
+    text-align: center;
+    background: #c5a1a1;
+    overflow: auto;
+}
+.slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.slide {
+    min-width: 100%;
+}
+.slider-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+.slider-control {
+    cursor: pointer;
+}
+.home .admin img{
+    color: rgb(251, 249, 249);
+    width: 5%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -25%;
+}
+.home .admin h3{
+    color: rgb(0, 0, 0);
+    width: 60%;
+    text-align: justify;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 30%;
+}
+.home .content-content{
+    width: 50%;
+    height: 100%;
+    font-size: 20px;
+    text-align: justify;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 25%;
+}
+.content-content img{
+    width: 100%;
+    height: auto;
+}
+/* phần biểu cảm  */
+.home .bieucam{
+    display: flex;
+    width: 100%;
+}
+.bieucam  a {
+    position: relative;
+    left: 10px;
+}
+.bieucam a1  ,
+.bieucam a2  {
+    text-decoration: none;
+    position: relative;
+    left: 650px;
+    right: 0px;
+}
+.home .tuongtac {
+    display: flex;
+    padding: 10px;
+    border-bottom: 2px solid #bcb0b0;
+    border-top: 2px solid #bcb0b0;
+}
+.tuongtac .tt ,
+.tuongtac .tt1 ,
+.tuongtac .tt2{
+    width: 33%;
+    text-align: center;
+    margin: 0 auto;
+}
+.tuongtac .tt1 a ,
+.tuongtac .tt2 a{
+    text-decoration: none;
+}
+.tuongtac .tt a:hover ,
+.tuongtac .tt1 a:hover ,
+.tuongtac .tt2 a:hover {
+    padding: 10px 50px;
+    background-color: #c1adad;
+}
+/* phần comment bài viết */
+.home .n1 img {
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 3%;
+}
+.home .n1 .n1-1{
+    width: 300px;
+    margin-left: 8%;
+    margin-top: -8%;
+    border-radius: 20px;
+    background-color: #bcb0b0;
+}
+.home .n1 .n1-1 h5{
+    display: flex;
+    position: relative;
+    margin-top: 2.5%;
+    margin-left: 6%;
+}
+.home .n1 .n1-1 p{
+    position: relative;
+    margin-top: -15px;
+    margin-left: 6.5%;
+}
+.home .n1 .n1-2{
+    display: flex;
+    font-size: 15px;
+}
+.home .n1 .n1-2 a {
+    position: relative;
+    margin-top: -1.5%;
+    margin-left: 10%;
+}
+.home .n1 .n1-2 a1 {
+    position: relative;
+    margin-top: -1.5%;
+    margin-left: 10%;
+}
+.home .n1 .n1-2 p {
+    position: relative;
+    margin-top: -1.5%;
+    margin-left: 5%;
+}
+.home .n2 img {
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 3%;
+}
+.home .n2 .n2-1{
+    width: 300px;
+    margin-left: 8%; 
+    margin-top: -8%;
+    border-radius: 20px;
+    background-color: #bcb0b0;
+}
+.home .n2 .n2-1 h5{
+    display: flex;
+    position: relative;
+    margin-top: 2.5%;
+    margin-left: 6%;
+}
+.home .n2 .n2-1 p{
+    position: relative;
+    margin-top: -15px;
+    margin-left: 6.5%;
+}
+.home .n2 .n2-2{
+    display: flex;
+    font-size: 15px;
+}
+.home .n2 .n2-2 a {
+    position: relative;
+    margin-top: -1.5%;
+    margin-left: 10%;
+}
+.home .n2 .n2-2 a1 {
+    position: relative;
+    margin-top: -1.5%;
+    margin-left: 9%;
+}
+.home .n2 .n2-2 p {
+    position: relative;
+    margin-top: -1.5%;
+    margin-left: 5%;
+}
+/* phần comment */
+.comment .n1 img {
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 8%;
+    margin-left: 33%;
+}
+.comment .n1 .n1-1{
+    width: 300px;
+    margin-left: 38%;
+    margin-top: -5%;
+    border-radius: 20px;
+    background-color: #bcb0b0;
+}
+.comment .n1 .n1-1 h5{
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    margin-top: 2.5%;
+    margin-left: 6%;
+}
+.comment .n1 .n1-1 p{
+    font-size: 20px;
+    position: relative;
+    margin-top: -15px;
+    margin-left: 6.5%;
+} 
+.comment .n1 .n1-2{
+    display: flex;
+    font-size: 17px;
+}
+.comment .n1 .n1-2 a {
+    position: relative;
+    margin-top: -1%;
+    margin-left: 39%;
+}
+.comment .n1 .n1-2 a1 {
+    position: relative;
+    margin-top: -1%;
+    margin-left: 4%;
+}
+.comment .n1 .n1-2 p {
+    position: relative;
+    margin-top: -1%;
+    margin-left: 3%;
+}
+.comment .n2 img {
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 33%;
+}
+.comment .n2 .n2-1{
+    width: 300px;
+    margin-left: 38%;
+    margin-top: -5%;
+    border-radius: 20px;
+    background-color: #bcb0b0;
+}
+.comment .n2 .n2-1 h5{
+    display: flex;
+    font-size: 20px;
+    position: relative;
+    margin-top: 2.5%;
+    margin-left: 6%;
+}
+.comment .n2 .n2-1 p{
+    font-size: 20px;
+    position: relative;
+    margin-top: -15px;
+    margin-left: 6.5%;
+}
+.comment .n2 .n2-2{
+    display: flex;
+    font-size: 17px;
+}
+.comment .n2 .n2-2 a {
+    position: relative;
+    margin-top: -1%;
+    margin-left: 39%;
+}
+.comment .n2 .n2-2 a1 {
+    position: relative;
+    margin-top: -1%;
+    margin-left: 3%;
+}
+.comment .n2 .n2-2 p {
+    position: relative;
+    margin-top: -1%;
+    margin-left: 3%;
+}
+/* phần hoạt động */
+.hoatdong .content p{
+    display: flex;
+    font-size: 1.3em;
+    color: #000000;
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 30%;
+}
+.hoatdong .content .admin1 img{
+    color: rgb(251, 249, 249);
+    width: 4%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 30%;
+}
+.hoatdong .content .admin1 h4{
+    display: flex;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 35%;
+}
+/* dấu sao phần nội dung */
+.home .ghim img{
+    color: rgb(251, 249, 249);
+    width: 2%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: -10%;
+}
+/* phần nhóm */
+.nhom .content{
+    font-size: 1.3em;
+    color: #000000;
+    position: absolute;
+    margin-top: 4%;
+    margin-left: 30%;
+}
+.nhom .admin{
+    width: 400%;
+    height: 100%;
+    background-color: #c8bcbc;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 200%;
+}
+.nhom .admin img{
+    color: rgb(251, 249, 249);
+    width: 7%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+.nhom .admin h4{
+    font-size: 18px;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 8%;
+}
+.nhom .admin p1{
+    font-size: 14px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+.nhom .admin .bar{
+    width: 20%;
+    height: 50%;
+    background-color: blueviolet;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 85%;
+}
+.nhom .admin .bar p2{
+    color: #fff;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+/* phần thư viện */
+.thuvien .content p{
+    font-size: 1.3em;
+    color: #000000;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 30%;
+}
+.thuvien .content img{
+    display: flex;
+    color: rgb(251, 249, 249);
+    width: 250px;
+    height: auto;
+}
+.thuvien .content a{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 30%;
+}
+.thuvien .content a1{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 50%;
+}
+.thuvien .content a2{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 30%;
+}
+.thuvien .content a3{
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 50%;
+}
+.thuvien .content a4{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 30%;
+}
+.thuvien .content a5{
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 50%;
+}
+/* phần liên hệ */
+.lienhe .content{
+    font-size: 1em;
+    position: absolute;
+    left: 35%;
+}
+.lienhe .content h5{
+    font-size: 1.2em;
+    height: 10px;
+}
+.lienhe .content p1{
+    font-size: 1.1em;
+}
+.lienhe .bar {
+    width: 130%;
+    height: 30%;
+    background-color: #053ef7;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px 0 0;
+    z-index: 1;
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 65%;
+}
+.lienhe .bar .admin2 img{
+    color: rgb(251, 249, 249);
+    width: 7%;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+.lienhe .bar .admin2 p{
+    font-size: 1em;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.lienhe .square {
+    width: 130%;
+    height: 130%;
+    background-color: rgb(215, 201, 201);
+    position: absolute;
+    margin-top: 20%;
+}
+.lienhe .bar1 {
+    width: 130%;
+    height: 30%;
+    background-color: #948888;
+    transform: translate(-50%, -50%);
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    margin-top: 89%;
+    margin-left: 65%;
+}
+.lienhe .bar2 .input{
+    width: 100%;
+    height: 20%;
+    background-color: rgb(226, 215, 215);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    z-index: 4;
+    position: absolute;
+    margin-top: 89%;
+    margin-left: 65%;
+}
+.lienhe span{
+    font-size: 35px;
+    position: absolute;
+    margin-top: 82.5%;
+    margin-left: 1%;
+}
+/* back to top */
+#bttop{
+    border:1px solid #4adcff;
+    background:#24bde2;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:35px;
+    right:10px;
+    cursor:pointer;
+    display:none;
+    color:#fff;
+    font-size:11px;
+    font-weight:900
+}
+#bttop:hover{
+    border:1px solid #ffa789;
+    background:#ff6734
+}
+
+/* chỉnh trên thiết bị điện thoại */
+@media only screen and (max-width: 767px){
+    .header h1{
+        font-size: 12px;
+    }
+    .header .links {
+        font-size: 10px;
+    }
+    .logo img{
+        width: 8%;
+        margin-top: -1%;
+        margin-left: 7%;
+    }
+    /* Trang chủ */
+    .home .admin h3{
+        font-size: 10px;
+        margin-left: 15%;
+    }
+    .home .content-content{
+        width: 80%;
+        font-size: 10px;
+        margin-left: 10%;
+    }
+    .home .content .img1 img{
+        width: 50%;
+    }
+    .home .admin img{
+        margin-top: 2%;
+        margin-left: -40%;
+    }
+    .home .ghim img{
+        width: 1.9%;
+        margin-left: -27%;
+    }
+    .home .tuongtac span{
+        font-size: 10px;
+    }
+    .n1 img{
+        width: 30px;
+    }
+    .n1 h5{
+        margin-left: 12%;
+    }
+    .n1 p{
+        margin-left: 12%;
+        margin-top: 15%;
+    }
+    .n2 img{
+        width: 30px;
+    }
+    .n2 h5{
+        margin-left: 12%;
+    }
+    .n2 p{
+        margin-left: 12%;
+        margin-top: 15%;
+    }
+    .cm1 img {
+        width: 30px;
+        margin-left: -20%;
+    }
+    .cm1 h5{
+        margin-left: -10%;
+    }
+    .cm1 p{
+        margin-top: 13%;
+        margin-left: -10%;
+    }
+    .cm2 img{
+        width: 30px;
+        margin-top: 30%;
+        margin-left: -20%;
+    }
+    .cm2 h5{
+        margin-top: 30%;
+        margin-left: -10%;
+    }
+    .cm2 p{
+        margin-top: 42%;
+        margin-left: -10%;
+    }
+    /* hoạt động */
+    .hoatdong .content p{
+        font-size: 20px;
+        margin-left: 10%;
+    }
+    .hoatdong .content .admin1 img{
+        width: 8%;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    .hoatdong .content .admin1 h4{
+        font-size: 10px;
+        margin-left: 20%;
+        margin-top: 10%;
+    }
+    /* thư viện */
+    .thuvien .content img{
+        width: 180px;
+    }
+    .thuvien .content p{
+        margin-left: 10%;
+    }
+    .thuvien .content a{
+        margin-left: 0%;
+    }
+    .thuvien .content a1{
+        margin-left: 43%;
+    }
+    .thuvien .content a2{
+        margin-top: 29%;
+        margin-left: 0%;
+    }
+    .thuvien .content a3{
+        margin-top: 29%;
+        margin-left: 43%;
+    }
+    .thuvien .content a4{
+        margin-top: 50%;
+        margin-left: 0%;
+    }
+    .thuvien .content a5{
+        margin-top: 50%;
+        margin-left: 43%;
+    }
+    .thuvien .content img{
+        margin-top: 12%;
+        margin-left: 25%;
+    }
+    /* liên hệ */
+    .lienhe .content {
+        font-size: 15px;
+        margin-left: -24%;
+    }
+    
+}
+/* chỉnh trên thiết bị máy tính bảng */
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+/* chỉnh trên thiết bị laptop */
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
+
+}
+/* chỉnh trên thiết bị máy tính bàn */
+@media only screen and (max-width: 1440px){
+
+}
